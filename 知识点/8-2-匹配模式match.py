@@ -10,3 +10,5 @@ match score:
         print('及格')
     case 'F':
         print('不及格')
+    case _:  # 兜底的
+        print('输入有误！')

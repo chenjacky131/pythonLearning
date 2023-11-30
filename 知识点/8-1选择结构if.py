@@ -40,3 +40,5 @@ if username == 'tony' and password == '8888':
     print('登录成功！')
 else:
     print('登录失败！')
+# python中的三元运算符
+print('True') if True else print('False')
