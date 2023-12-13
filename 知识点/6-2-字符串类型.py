@@ -1,3 +1,6 @@
+"""
+字符串是python中的不可变数据类型
+"""
 str1 = 'str'
 str2 = "str"
 # 多行字符串单引号和双引号都可以
@@ -28,3 +31,6 @@ print(s[0:])  # 默认M为字符串结束
 # 字符串分解赋值
 a, b, c, d, e = 'hello'
 print(a, b, c, d, e)
+# 模板字符串
+name = 'tom'
+print(f'他是{name}')

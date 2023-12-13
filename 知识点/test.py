@@ -1,1 +1,2 @@
-print('True') if False else print('False')
+lst = ['1001手机']
+print('1001手机' in lst)
