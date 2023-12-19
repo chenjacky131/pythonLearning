@@ -1,2 +1,4 @@
-lst = ['1001手机']
-print('1001手机' in lst)
+i = 1
+while i < 10:
+    print(i)
+    i += 1
