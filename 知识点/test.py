@@ -1,4 +1,2 @@
-i = 1
-while i < 10:
-    print(i)
-    i += 1
+print('1'.isupper())
+print('1'.upper())
