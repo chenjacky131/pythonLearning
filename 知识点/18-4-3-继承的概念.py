@@ -36,3 +36,7 @@ class Doctor(Person):
 stu = Student('托尼', 12, 8888)
 stu.show()
 print(stu.num)
+
+doctor = Doctor('张一一', 32, '外科')
+doctor.show()
+print(doctor.department)

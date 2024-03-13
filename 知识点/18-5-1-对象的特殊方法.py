@@ -1,0 +1,15 @@
+a = 10
+b = 20
+print(a.__add__(b))
+print(a.__sub__(b))
+print(f'{a}<{b}吗？', a.__lt__(b))
+print(f'{a}<={b}吗？', a.__le__(b))
+print(f'{a}=={b}吗？', a.__eq__(b))
+print(f'{a}>{b}吗？', a.__gt__(b))
+print(f'{a}>={b}吗？', a.__ge__(b))
+print(f'{a}!={b}吗？', a.__ne__(b))
+print(f'{a}*{b}=', a.__mul__(b))
+print(f'{a}/{b}=', a.__truediv__(b))
+print(f'{a}%{b}=', a.__mod__(b))
+print(f'{a}整除{b}=', a.__floordiv__(b))
+print(f'{a}的平方=', a.__pow__(2))
