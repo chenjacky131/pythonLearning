@@ -5,7 +5,7 @@
 2.使用file=fp
 """
 
-fp = open('text.txt', 'a+')   # 如果文件不存在就创建，存在就文件内容的后面进行追加
+fp = open('../text.txt', 'a+')   # 如果文件不存在就创建，存在就文件内容的后面进行追加
 print('Hello World', file=fp)
 fp.close()
 

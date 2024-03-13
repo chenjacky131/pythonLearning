@@ -13,7 +13,7 @@ def copy(src, new_path):
 
 
 if __name__ == '__main__':
-    source_src = './pic.jpg'
-    target_path = './pic_copy.jpg'
+    source_src = 'pic.jpg'
+    target_path = 'pic_copy.jpg'
     copy(source_src, target_path)
     print('文件复制完毕!')

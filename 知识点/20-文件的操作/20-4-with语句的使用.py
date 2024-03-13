@@ -28,4 +28,4 @@ if __name__ == '__main__':
     write_fun()
     read_fun()
     # 文件复制
-    copy('./aa.txt', './aa_copy.txt')
+    copy('./aa.txt', '../aa_copy.txt')
