@@ -4,6 +4,13 @@
 使用requests库中的get()函数可以打开一个网络请求，并获取一个Response响应对象。响应
 结果中的字符串数据可以通过响应对象的text属性获取，响应结果中除了有字符串数据也有二进制数据，
 响应结果中的二进制数据可以通过响应对象的content属性获取。
+get请求带参数:   r = request.get(url, params={'key': 'value'}) 请求数据url?key=value
+获取json格式数据: r.json()
+获取二进制格式数据，图片获取可用这个再写入文件:    r.content
+自定义请求头: requests.get(url, headers=headers)
+表单格式提交post: requests.post(url, data={'name':'tom'})
+响应状态码:  r.status_code
+响应头:    r.headers
 """
 import requests
 import re
@@ -11,6 +18,7 @@ url = 'http://www.weather.com.cn/weather1d/101230201.shtml'
 resp = requests.get(url)
 # 设置一下编码模式
 resp.encoding = 'utf-8'
+# resp.json()  # 获取json格式数据
 # print(resp.text)
 city = re.findall('<span class="name">([\u4e00-\u9fa5]*)</span>', resp.text)
 weather = re.findall('<span class="weather">([\u4e00-\u9fa5]*)</span>', resp.text)
